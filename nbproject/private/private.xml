@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/dongyuezhang/NetBeansProjects/Assignment2/src/java/dataaccesslayer/CourseDaoImpl.java</file>
+            <file>file:/Users/dongyuezhang/NetBeansProjects/Assignment2/src/java/dataaccesslayer/DataSource.java</file>
+            <file>file:/Users/dongyuezhang/NetBeansProjects/Assignment2/web/index.html</file>
+            <file>file:/Users/dongyuezhang/NetBeansProjects/Assignment2/web/WEB-INF/web.xml</file>
+            <file>file:/Users/dongyuezhang/NetBeansProjects/Assignment2/src/java/viewlayer/courseServlet.java</file>
+            <file>file:/Users/dongyuezhang/NetBeansProjects/Assignment2/src/java/businesslayer/CourseBusinessLogic.java</file>
+            <file>file:/Users/dongyuezhang/NetBeansProjects/Assignment2/src/java/datatransferobjects/CredentialsDTO.java</file>
+        </group>
+    </open-files>
+</project-private>
