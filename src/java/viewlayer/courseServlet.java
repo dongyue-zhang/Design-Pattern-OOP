@@ -1,35 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
+
 package viewlayer;
 
 import businesslayer.CourseBusinessLogic;
 import datatransferobjects.CourseDTO;
 import datatransferobjects.CredentialsDTO;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Properties;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *
+ * A servlet that listens to requests for url pattern /courses, 
+ * and responses according to methods used by requests
  * @author dongyuezhang
+ * @version 1.0
+ * @since 18.0.2.1
  */
-public class courseServlet extends HttpServlet {
+public class CourseServlet extends HttpServlet {
+    
+    /**
+     * Non-argument constructor
+     */
+    public CourseServlet() {}
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
+     * methods. Renders a table which contains all courses from the tutoring database 
+     * by using credentials input from the client side to access the database
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
@@ -41,12 +41,9 @@ public class courseServlet extends HttpServlet {
         cre.setUsername(request.getParameter("username"));
         cre.setPassword(request.getParameter("password"));
         
-//        OutputStream output = new FileOutputStream("src/main/java/dataaccesslayer/database.properties");
-//        prop.store(output, null);
         CourseBusinessLogic courseBL = new CourseBusinessLogic(cre);
         ArrayList<CourseDTO> courses = courseBL.getAllCourses();
         try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -79,9 +76,8 @@ public class courseServlet extends HttpServlet {
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP <code>GET</code> method.
+     * Handles the HTTP <code>GET</code> method by calling processRequest()
      *
      * @param request servlet request
      * @param response servlet response
@@ -95,7 +91,7 @@ public class courseServlet extends HttpServlet {
     }
 
     /**
-     * Handles the HTTP <code>POST</code> method.
+     * Handles the HTTP <code>POST</code> method by calling processRequest()
      *
      * @param request servlet request
      * @param response servlet response
@@ -115,6 +111,6 @@ public class courseServlet extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

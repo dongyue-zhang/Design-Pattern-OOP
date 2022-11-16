@@ -21,6 +21,11 @@ public class SessionDTO {
     private int student_StudentID;
 
     /**
+     * Non-argument constructor
+     */
+    public SessionDTO() {}
+    
+    /**
      * Gets DateKey of the session
      * @return DateKey of the session
      */

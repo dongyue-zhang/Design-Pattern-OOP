@@ -7,8 +7,10 @@ import datatransferobjects.StudentDTO;
 import java.util.ArrayList;
 
 /**
- * A business logic layer that handles exceptions when accessing database tutoring 
+ * A business logic layer for the student table that handles exceptions when accessing database tutoring 
  * @author dongyuezhang
+ * @version 1.0
+ * @since 18.0.2.1
  */
 public class StudentBusinessLogic {
     private final int FIRST_NAME_MAX_LENGTH = 45;
@@ -18,7 +20,8 @@ public class StudentBusinessLogic {
     private StudentDaoImpl studentDao = null;
     
     /**
-     * Non-argument constructor that instantiate a StudentDaoImpl for accessing the database
+     * Constructor that instantiate a StudentDaoImpl for accessing the database with credentials to the database
+     * @param cre credentials to the database
      */
     public StudentBusinessLogic(CredentialsDTO cre) {
         studentDao = new StudentDaoImpl(cre);

@@ -12,6 +12,11 @@ public class ExperienceDTO {
     private String description;
 
     /**
+     * Non-argument constructor
+     */
+    public ExperienceDTO(){}
+    
+    /**
      * Gets ExperienceTD of the experience
      * @return ExperienceTD of the experience
      */

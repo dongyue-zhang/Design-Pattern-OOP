@@ -13,6 +13,11 @@ public class StudentDTO {
     private String lastName;
     private String email;
     private String phoneNumber;
+    
+    /**
+     * Non-argument constructor
+     */
+    public StudentDTO() {}
 
     /**
      * Gets StudentID

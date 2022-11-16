@@ -13,6 +13,10 @@ public class CourseDTO {
     private String courseDescription;
 
     /**
+     * Non-argument constructor
+     */
+    public void CourseDTO() {}
+    /**
      * Gets course code of the course
      * @return course code of the course
      */
@@ -53,7 +57,7 @@ public class CourseDTO {
 
     /**
      * Sets course description of the course
-     * @param courseDescripetion course description of the course
+     * @param courseDescription course description of the course
      */
     public void setCourseDescription(String courseDescription) {
         this.courseDescription = courseDescription;

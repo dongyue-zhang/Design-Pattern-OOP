@@ -16,6 +16,10 @@ public class TutorDTO {
     private int experience_ExperinceID;
 
     /**
+     * Non-argument constructor
+     */
+    public TutorDTO() {}
+    /**
      * Gets TutorID of the tutor
      * @return TutorID of the tutor
      */

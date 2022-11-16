@@ -10,6 +10,11 @@ package datatransferobjects;
 public class TutorCourseDTO {
     private int tutor_TutorID;
     private String course_CourseCode;
+    
+    /**
+     * Non-argument constructor
+     */
+    public TutorCourseDTO() {}
 
     /**
      * Gets TutorID that tutors the course

@@ -12,6 +12,10 @@ public class StudentCourseDTO {
     private String course_CourseCode;
 
     /**
+     * Non-argument constructor
+     */
+    public StudentCourseDTO() {}
+    /**
      * Gets StudentID of the student that attends the course
      * @return StudentID of the student that attends the course
      */
